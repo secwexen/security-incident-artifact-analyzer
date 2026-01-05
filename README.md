@@ -54,7 +54,7 @@ security-incident-artifact-analyzer/
 ### **1. Clone the repository**
 ```bash
 git clone https://github.com/secwexen/security-incident-artifact-analyzer
-cd security-ıncident-artifact-analyzer
+cd security-incident-artifact-analyzer
 ```
 
 ### **2. Install dependencies**
