@@ -1,7 +1,8 @@
 """
 sysmon_parser.py
 
-Module for parsing Sysmon logs for suspicious activity.
+Placeholder module for parsing Sysmon logs.
+Currently returns empty structured data but runs without errors.
 """
 
 from typing import List, Dict, Any
@@ -24,7 +25,6 @@ class SysmonParser:
 
         :return: List of process events.
         """
-        # TODO: Implement real parsing logic
         return []
 
     def parse_network_connections(self) -> List[Dict[str, Any]]:
@@ -33,7 +33,6 @@ class SysmonParser:
 
         :return: List of network events.
         """
-        # TODO: Implement real parsing logic
         return []
 
     def parse_file_events(self) -> List[Dict[str, Any]]:
@@ -42,7 +41,6 @@ class SysmonParser:
 
         :return: List of file activity events.
         """
-        # TODO: Implement real parsing logic
         return []
 
     def run(self) -> Dict[str, Any]:
