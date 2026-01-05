@@ -51,7 +51,7 @@ def parse_args() -> argparse.Namespace:
     )
     parser.add_argument(
         "--browser",
-        help="Path to browser profile directory or history database.",
+        help="Path to browser profile directory or history SQLite DB.",
     )
     parser.add_argument(
         "--sysmon",
