@@ -53,7 +53,7 @@ security-incident-artifact-analyzer/
 
 ### **1. Clone the repository**
 ```bash
-git clone https://github.com/secwexen/security-incident-artifact-analyzer
+git clone https://github.com/secwexen/security-incident-artifact-analyzer.git
 cd security-incident-artifact-analyzer
 ```
 
