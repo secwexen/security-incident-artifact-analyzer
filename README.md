@@ -62,10 +62,44 @@ cd security-incident-artifact-analyzer
 pip install -r requirements.txt
 ```
 
-### **3. Run the analyzer**
+---
+
+## **New CLI Commands for Security Incident Artifact Analyzer**
+
+The analyzer now requires **artifact type flags** instead of a generic `--analyze`. Use one of the following options:
+
+| Flag         | Description                        | Example Input File              |
+| ------------ | ---------------------------------- | ------------------------------- |
+| `--registry` | Analyze Windows Registry artifacts | `examples/registry.reg`         |
+| `--browser`  | Analyze browser history            | `examples/browser_history.json` |
+| `--sysmon`   | Analyze Sysmon event logs          | `examples/sysmon.evtx`          |
+| `--network`  | Analyze network logs or PCAPs      | `examples/network.pcap`         |
+
+---
+
+## **Usage Examples**
+
 ```bash
-python analyzer.py --input path/to/artifacts/
+# Analyze Sysmon logs
+python -m core.analyzer --sysmon examples/sysmon.evtx
+
+# Analyze browser history
+python -m core.analyzer --browser examples/browser_history.json
+
+# Analyze Windows Registry
+python -m core.analyzer --registry examples/registry.reg
+
+# Analyze network logs / PCAP
+python -m core.analyzer --network examples/network.pcap
 ```
+
+---
+
+## Notes
+
+* Only **one artifact type** can be processed per run.
+* Make sure the **input file exists** and the path is correct.
+* The results will be saved in the **reports/** folder or printed in the console.
 
 ---
 
