@@ -115,4 +115,5 @@ python -m core.analyzer --network examples/network.pcap
 
 ## License
 
-Apache-2.0 License
+This project is licensed under the **Apache-2.0 License**.  
+See the [LICENSE](LICENSE) file for full details.
